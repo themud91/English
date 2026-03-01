@@ -9,10 +9,9 @@
   --hover-red: #830444;
 }
 
-/* GOOGLE FONT  */
+/* fuents  */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
-
 
 body {
   background-color: var(--bg-gris);
@@ -22,31 +21,22 @@ body {
   margin-top: 100px;
 }
 
-
 /* ============================= */
-
-
-
 
 .navbar-brand {
   color: var(--morado);
   font-weight: bold;
   letter-spacing: 5px;
-    min-width: 220px; /* ajusta según el ancho final del texto */
+  min-width: 220px; 
   display: inline-block;
   font-family: 'Share Tech Mono', monospace;
 
 }
 
-
-
 .navbar-brand:hover {
   color: var(--hover-red);
   transition: color 1s, text-shadow 0.3s;
-
 }
-
-
 
 .nav-link {
   color: var(--morado);
@@ -63,7 +53,6 @@ body {
 
 .navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 240, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; }
 
-
 /* ============================= */
 section {
     scroll-margin-top: 50px;
@@ -77,17 +66,14 @@ section {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
   transition: transform 0.8s;
   border-radius: 1em;
-  
 }
 
 
 #introduction p {
-
   font-size: 1.2rem;
   line-height: 1.9;
   letter-spacing: 0.3px;
 }
-
 
 section:hover {
   transform: translateY(-4px);
@@ -125,7 +111,6 @@ footer {
 
 /* ============================= */
 
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -143,3 +128,5 @@ footer {
   background: var(--hover-red); 
 }
 
+
+/* @GUILLERMO PEREZ */

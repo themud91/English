@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const brand = document.querySelector(".brand-text");
-  let glitchInterval = null;
+  let glitchIntervalo = null;
   let isGlitching = false; 
 
   function glitchEffect() {
@@ -11,16 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const chars = "█▓▒░▄▀■□▪▫"; 
     let flashes = 0;
 
-    glitchInterval = setInterval(() => {
+    glitchIntervalo = setInterval(() => {
       brand.textContent = originalText
         .split("")
         .map(letter => (Math.random() < 0.5 ? letter : chars[Math.floor(Math.random() * chars.length)]))
         .join("");
+        
+        flashes++;
 
-      flashes++;
       if (flashes > 3) { 
-        clearInterval(glitchInterval);
-        glitchInterval = null;
+        clearInterval(glitchIntervalo);
+        glitchIntervalo = null;
         brand.textContent = originalText;
         isGlitching = false; 
       }
