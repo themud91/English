@@ -1,0 +1,145 @@
+/* VAR        */
+:root {
+  --bg-black: #0d0d0d;
+  --bg-gris: #161120;
+  --rojoclaro: #fdb3b3;
+  --azulclaro: #00f0ff;
+  --rojo: #ff0055;
+  --morado: #9d00ff;
+  --hover-red: #830444;
+}
+
+/* GOOGLE FONT  */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Share+Tech+Mono&display=swap');
+
+
+body {
+  background-color: var(--bg-gris);
+  color: var(--azulclaro);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.8;
+  margin-top: 100px;
+}
+
+
+/* ============================= */
+
+
+
+
+.navbar-brand {
+  color: var(--morado);
+  font-weight: bold;
+  letter-spacing: 5px;
+    min-width: 220px; /* ajusta según el ancho final del texto */
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace;
+
+}
+
+
+
+.navbar-brand:hover {
+  color: var(--hover-red);
+  transition: color 1s, text-shadow 0.3s;
+
+}
+
+
+
+.nav-link {
+  color: var(--morado);
+  transition: color 0.5s;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.nav-link:hover {
+  color: var(--hover-red);
+    transition: color 0.5s;
+
+}
+
+.navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(0, 240, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important; }
+
+
+/* ============================= */
+section {
+    scroll-margin-top: 50px;
+
+  padding: 60px 20px;
+  margin: 30px auto;
+  max-width: 900px;
+  border-left: 2px solid var(--morado);
+  border-right: 2px solid var(--morado);
+  background-color: var(--bg-gris);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: transform 0.8s;
+  border-radius: 1em;
+  
+}
+
+
+#introduction p {
+
+  font-size: 1.2rem;
+  line-height: 1.9;
+  letter-spacing: 0.3px;
+}
+
+
+section:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px var(--azulclaro);
+}
+
+section h2 {
+  color: var(--primary-blue);
+  font-family: 'Orbitron', 'Segoe UI', sans-serif;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.4);
+}
+
+section ul {
+  padding-left: 1.5rem;
+}
+
+section ul li::marker {
+  color: var(--morado);
+}
+
+/* ============================= */
+
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 2px solid var(--morado);
+  color: var(--azulclaro);
+  font-weight: bold;
+  background-color: #111;
+  letter-spacing: 2px;
+}
+
+/* ============================= */
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-black);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--azulclaro);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-red); 
+}
+
